@@ -1,5 +1,6 @@
 function un = fvmsol(D,mesh,t,u0)
 % Computes finite volume solution at time t
+% Note this code only works for the boundary conditions c0(t) = 1 and qL(t) = 0.
 
 % Define relevant properties from the mesh
 elements        = mesh.elements;

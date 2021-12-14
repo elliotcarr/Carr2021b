@@ -1,4 +1,4 @@
-function [U1,U2] = leading_order_term(D1,D2,ell,L,C0,CL)
+function [U1,U2] = leading_order_term(D1,D2,ell,L,C0,QL)
 
 % mu_1(s) and mu_2(s) defined on page 11
 mu1 = @(s) sqrt(s/D1);
@@ -13,10 +13,10 @@ gamma11 = @(s) -D1*mu1(s)*exp(-mu1(s)*ell)*C0(s)/psi1(s);
 gamma12 = @(s) -1/psi1(s);
 gamma13 = @(s) -D1*mu1(s)*exp(mu1(s)*ell)*C0(s)/psi1(s);
 gamma14 = @(s) 1/psi1(s);
-gamma21 = @(s) D2*mu2(s)*exp(-mu2(s)*ell)*CL(s)/psi2(s);
+gamma21 = @(s) D2*mu2(s)*exp(-mu2(s)*ell)*QL(s)/psi2(s);
 gamma22 = @(s) -exp(-mu2(s)*L)/psi2(s);
 gamma24 = @(s) -exp(mu2(s)*L)/psi2(s);
-gamma23 = @(s) D2*mu2(s)*exp(mu2(s)*ell)*CL(s)/psi2(s);
+gamma23 = @(s) D2*mu2(s)*exp(mu2(s)*ell)*QL(s)/psi2(s);
 
 % V^(0)(s) defined on page 7
 V0 = @(s) (gamma11(s)*exp(mu1(s)*ell) + gamma13(s)*exp(-mu1(s)*ell) ...
