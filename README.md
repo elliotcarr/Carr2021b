@@ -2,10 +2,6 @@
 
 MATLAB code for the manuscript:
 
-EJ Carr, DJ Oliver and MJ Simpson (2022) "Approximate analytical solution for transient heat and mass transfer across an irregular interface"
-Communications in Nonlinear Science and Numerical Simulation, 108, 106211.
+EJ Carr (2022) "Exponential and Weibull models for spherical and spherical-shell diffusion-controlled release systems with semi-absorbing boundaries"
 
-Published paper: https://doi.org/10.1016/j.cnsns.2021.106211 <br>
-arXiv preprint: https://arxiv.org/abs/2105.10116
-
-Run script.m to produce results.
+Code will be made available once paper appears on arXiv.
